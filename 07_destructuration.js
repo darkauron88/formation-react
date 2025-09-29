@@ -37,7 +37,7 @@ console.log(extractRest([1, 2, 3]))
  * - interdiction d'utiliser l'opérateur "." pour accéder au champ "name"
  */
 
-const extractName = ({name, age}) => name;
+const extractName = ({name}) => name;
 console.log(extractName({name: "toto", age: 42}))
 
 
