@@ -8,8 +8,8 @@
  *  - for, foreach, while, do while sont interdits
  */
 
-const concat = null;
-
+const concat = (tab_a, tab_b) => [...tab_a, ...tab_b];
+console.log(concat([1, 2, 3],[4, 5, 6]));
 /**
  * utiliser l'opérateur de composition ... afin d'ajouter un élément à un tableau
  * 
@@ -19,7 +19,8 @@ const concat = null;
  * - ne pas utiliser la méthode push
  */
 
-const push = null;
+const push = (tab, value) => [...tab, value];
+console.log(push([1, 2, 3], 1));
 
 /**
  * utiliser l'opérateur de composition ... afin de fusionner 2 objets passés en paramètres
