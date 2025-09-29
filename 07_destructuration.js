@@ -12,7 +12,7 @@
  *  - interdiction d'utiliser slice ou splice
  */
 
-const extractFirstTwo = ([val1, val2] = tab) => [val1, val2];
+const extractFirstTwo = ([val1, val2]) => [val1, val2];
 console.log(extractFirstTwo([1, 2, 3]))
 
 /**
@@ -22,7 +22,7 @@ console.log(extractFirstTwo([1, 2, 3]))
  * exemple: [1, 2, 3] => [2, 3]
  */
 
-const extractRest =  ([val1, ...rest] = tab) => rest;
+const extractRest =  ([val1, ...rest]) => rest;
 console.log(extractRest([1, 2, 3]))
 
 /**
@@ -37,7 +37,7 @@ console.log(extractRest([1, 2, 3]))
  * - interdiction d'utiliser l'opérateur "." pour accéder au champ "name"
  */
 
-const extractName = ({name, age} = obj) => name;
+const extractName = ({name, age}) => name;
 console.log(extractName({name: "toto", age: 42}))
 
 
@@ -52,7 +52,7 @@ console.log(extractName({name: "toto", age: 42}))
  * 
  */
 
-const removePassword = ({password, ...rest} = obj) => rest;
+const removePassword = ({password, ...rest}) => rest;
 console.log(removePassword({name: "toto", password: '1234'}))
 
 module.exports = {extractFirstTwo, extractRest, extractName, removePassword}
