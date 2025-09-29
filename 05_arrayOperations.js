@@ -66,7 +66,7 @@ console.log(findUserById([
     {id: 2, name: 'Doe'},
     {id: 3, name: 'Foo'},
     {id: 4, name: 'Bar'},
-], 2))
+], 3))
 
 
 module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
