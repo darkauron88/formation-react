@@ -59,7 +59,7 @@ console.log(sum([21, 10, 5]));
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const findUserById = tab => tab.find(i => i.id===2);
+const findUserById = tab => tab.find(i => i.id===3).name;
 
 console.log(findUserById([
     {id: 1, name: 'John'},
