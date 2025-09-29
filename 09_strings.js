@@ -9,4 +9,7 @@
  *  - ne pas utiliser la fonction concat de String
  */
 
-const concat = null;
+const concat = (var1, var2) => `${var1} ${var2}`;
+console.log(concat("John", "Doe"));
+
+module.exports = {concat};
