@@ -59,14 +59,14 @@ console.log(sum([21, 10, 5]));
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const findUserById = tab => tab.find(i => i.id===3).name;
+const findUserById = (tab, index) => tab.find(i => i.id===index).name;
 
 console.log(findUserById([
     {id: 1, name: 'John'},
     {id: 2, name: 'Doe'},
     {id: 3, name: 'Foo'},
     {id: 4, name: 'Bar'},
-]))
+], 2))
 
 
 module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
